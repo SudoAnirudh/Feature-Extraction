@@ -58,19 +58,5 @@ def visualize_features(original_image, edges, contours):
     plt.show() # Shows the plot.
 
 if __name__ == "__main__": # Ensures the code within this block only runs when the script is executed directly.
-    # Path to your aerial or satellite image
-    image_path = r"C:\Users\aniru\Downloads\photograph-neighbourhood-shot-airplane.webp" # Defines the path to the image file.
-
-
-    
-    # Load and preprocess the image
-    original_image = load_image(image_path) # Loads the image.
-    preprocessed_image = preprocess_image(original_image) # Preprocesses the image (grayscale and blur).
-    
-    # Extract edges and detect contours
-    edges = extract_edges(preprocessed_image) # Extracts edges.
-    contours = detect_contours(edges) # Detects contours.
-    
-    # Visualize the results
-    visualize_features(original_image, edges, contours) # Visualizes the results.
+    pass
 
