@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/process",
+      "destination": "/backend/app.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ]
+}

@@ -6,8 +6,7 @@ import base64
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-# Add parent directory to path to import main.py
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Import from local main.py
 from main import preprocess_image, extract_edges, detect_contours
 
 app = Flask(__name__)
